@@ -13,6 +13,7 @@ pub struct ParserContext<'a> {
     pub stylesheet_origin: Origin,
     pub base_url: &'a Url,
     pub selector_context: SelectorParserContext,
+    pub error_reporter: ParseErrorReporter,
 }
 
 impl<'a> ParserContext<'a> {
@@ -33,8 +34,6 @@ impl<'a> ParserContext<'a> {
         UrlParser::new().base_url(self.base_url).parse(input)
             .unwrap_or_else(|_| Url::parse("about:invalid").unwrap())
     }
-    
-    pub fn error_reporter(&self) -> ();
 }
 
 

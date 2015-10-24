@@ -25,6 +25,6 @@ extern crate util;
 pub mod values;
 pub mod viewport;
 
-trait ParseErrorReporter<T> {
-    fn double_drop(self, _: T);
+trait ParseErrorReporter {
+    pub fn report_error();
 }
