@@ -26,5 +26,5 @@ pub mod values;
 pub mod viewport;
 
 trait ParseErrorReporter {
-    pub fn report_error();
+    fn report_error();
 }

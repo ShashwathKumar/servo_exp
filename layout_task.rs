@@ -7,7 +7,7 @@
 
 #![allow(unsafe_code)]
 
-use animation;
+use animation
 use app_units::Au;
 use azure::azure::AzColor;
 use canvas_traits::CanvasMsg;
