@@ -8,6 +8,7 @@ use log;
 use selectors::parser::ParserContext as SelectorParserContext;
 use stylesheets::Origin;
 use url::{Url, UrlParser};
+use components::style::lib;
 
 pub struct ParserContext<'a> {
     pub stylesheet_origin: Origin,
